@@ -15,6 +15,10 @@ function App() {
           <img src={headShot} alt="Headshot" className="Headshot"></img>
           <h1 className="Headshot">Ethan Nguyen</h1>
         </div>
+        <div className="AboutMe">
+          <h1 className="AboutMe">About Me</h1>
+          <p>Hello world</p>
+        </div>
       </header>
       <div className="Social-Wrapper">
         <div className="Social">
@@ -23,9 +27,6 @@ function App() {
         <div className="Social">
           <i className="fa fa-github"></i> Github
         </div>
-      </div>
-      <div className="AboutMe">
-        <h1 className="AboutMe">About Me</h1>
       </div>
     </div>
   );

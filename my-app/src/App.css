@@ -11,7 +11,10 @@
 }
 
 .App-header {
+  display: flex;
+  gap: 10vmin;
   height: fit-content;
+  width: fit-content;
 }
 
 div.Headshot {
@@ -50,13 +53,16 @@ div.Social:hover {
   opacity: 70%;
 }
 div.Social-Wrapper {
+  width:fit-content;
+  height: fit-content;
   display: flex;
   flex-direction: row;
   gap: 1vmin;
 }
 
 div.AboutMe {
-  
+  width:fit-content;
+  height: fit-content;  
 }
 
 h1.AboutMe {
