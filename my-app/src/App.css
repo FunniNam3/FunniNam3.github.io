@@ -1,15 +1,12 @@
 .App {
   text-align: center;
   background-color: #282c34;
-  height: 100vh;
-  width: 100vw;
   color: white;
   padding: 5vmin;
   display: flex;
   gap: 1.75vmin;
   flex-flow: row wrap;
   gap: 2vmin;
-  align-content: start;
 }
 
 .App-header {
@@ -68,10 +65,10 @@ div.Social-Wrapper {
   gap: 1vmin;
 }
 
-div.AboutMe {
-  width:fit-content;
-  max-width: 60%;
-  height: fit-content;  
+section.AboutMe {
+  flex-grow: 4;
+  flex-basis: 60%;
+  min-width: 20vmin;
 }
 
 h1.AboutMe {
@@ -82,11 +79,63 @@ h2.AboutMe {
   font-size: 3vmin;
 }
 
-p.AboutMe {
+p.ProfAbt {
   text-align: center;
-  font-size: 2vmin;
+  font-size: 3vmin;
+  flex-shrink: none;
 }
 
 p.PersonalAbt {
   font-size: 4vmin;
+}
+
+section.Experience-Container {
+  text-align: left;
+  flex-basis: 100%;
+  flex-grow: 2;
+}
+
+h1.Experience-Container {
+  font-size: 4vmin;
+}
+
+ul.Experience-Container {
+  list-style: none;
+}
+
+div.Experience {
+  display: flex;
+  gap: 2vmin;
+  height: fit-content;
+}
+
+h2.Experience {
+  margin: 0;
+  font-size: 3vmin;
+}
+
+h2.ExLocat {
+  margin: 0;
+  flex-grow: 1;
+  font-size: 3vmin;
+  text-align: right;
+}
+
+h3.Experience {
+  margin: 0;
+  font-size: 2vmin;
+}
+
+h3.ExDate {
+  margin: 0;
+  font-size: 2.5vmin;
+  flex-grow: 1;
+  text-align: right;
+}
+
+li.Experience {
+  font-size: 2vmin;
+  display: flex;
+  flex-direction: column;
+  gap: 1vmin;
 }
