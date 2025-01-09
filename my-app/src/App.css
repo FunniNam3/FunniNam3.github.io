@@ -6,8 +6,10 @@
   color: white;
   padding: 5vmin;
   display: flex;
-  flex-direction: column;
   gap: 1.75vmin;
+  flex-flow: row wrap;
+  gap: 2vmin;
+  align-content: start;
 }
 
 .App-header {
@@ -15,11 +17,15 @@
   gap: 10vmin;
   height: fit-content;
   width: fit-content;
+  flex-direction: column;
+  gap: max(0.5vmin,15px);
+  min-width: 200px;
 }
 
 div.Headshot {
   width: fit-content;
-  height: fit-content;
+  height: 30vmin;
+  min-height: 145px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -27,19 +33,20 @@ div.Headshot {
 }
 
 img.Headshot {
-  height: 25vmin;
-  width: 25vmin;
+  height: 70%;
+  width: auto;
+  min-height: 105px;
   border-radius: 50%;
 }
 h1.Headshot {
   margin: 0px;
-  font-size: 6vmin;
+  font-size: max(calc(30vmin * 0.2),30px);
 }
 
 div.Social {
   width: fit-content;
   height: fit-content;
-  font-size: 2.5vmin;
+  font-size: max(2.5vmin, 15px);
   padding: 2vmin;
   padding-top: 1vmin;
   padding-bottom: 1vmin;
@@ -52,6 +59,7 @@ div.Social {
 div.Social:hover {
   opacity: 70%;
 }
+
 div.Social-Wrapper {
   width:fit-content;
   height: fit-content;
@@ -62,9 +70,23 @@ div.Social-Wrapper {
 
 div.AboutMe {
   width:fit-content;
+  max-width: 60%;
   height: fit-content;  
 }
 
 h1.AboutMe {
-  text-align: left;
+  font-size: 4vmin;
+}
+
+h2.AboutMe {
+  font-size: 3vmin;
+}
+
+p.AboutMe {
+  text-align: center;
+  font-size: 2vmin;
+}
+
+p.PersonalAbt {
+  font-size: 4vmin;
 }

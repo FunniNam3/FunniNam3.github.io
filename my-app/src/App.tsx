@@ -15,18 +15,29 @@ function App() {
           <img src={headShot} alt="Headshot" className="Headshot"></img>
           <h1 className="Headshot">Ethan Nguyen</h1>
         </div>
-        <div className="AboutMe">
-          <h1 className="AboutMe">About Me</h1>
-          <p>Hello world</p>
+        <div className="Social-Wrapper">
+          <div className="Social">
+            <i className="fa fa-linkedin"></i> Linkedin
+          </div>
+          <div className="Social">
+            <i className="fa fa-github"></i> Github
+          </div>
         </div>
       </header>
-      <div className="Social-Wrapper">
-        <div className="Social">
-          <i className="fa fa-linkedin"></i> Linkedin
-        </div>
-        <div className="Social">
-          <i className="fa fa-github"></i> Github
-        </div>
+
+      <div className="AboutMe">
+        <h1 className="AboutMe">About Me</h1>
+        <h2 className="AboutMe">Professional</h2>
+        <p className="AboutMe">
+          Computer Engineering undergraduate at Texas A&M with a strong
+          foundation in software development, and problem-solving. Passionate
+          about building scalable applications and improving software
+          performance through coding, testing, and debugging
+        </p>
+        <h2 className="AboutMe">Personal</h2>
+        <p className="PersonalAbt">
+          Viet College Student that loves to rock climb and solve problems
+        </p>
       </div>
     </div>
   );
