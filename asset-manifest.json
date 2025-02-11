@@ -1,16 +1,22 @@
 {
   "files": {
-    "main.css": "/static/css/main.493c2e33.css",
-    "main.js": "/static/js/main.3c344a73.js",
+    "main.css": "/static/css/main.22a8c2a4.css",
+    "main.js": "/static/js/main.dc508d1a.js",
     "static/js/453.ed3810f9.chunk.js": "/static/js/453.ed3810f9.chunk.js",
-    "static/media/headshot.png": "/static/media/headshot.a7c83fa9a2731f5c09b4.png",
+    "static/media/GitHub.svg": "/static/media/GitHub.26a913cd0e3bc828317a6c0bcf543bfc.svg",
+    "static/media/WallOutline.svg": "/static/media/WallOutline.4f9620a4664982bc1a7b.svg",
+    "static/media/WallInline.svg": "/static/media/WallInline.2df30c207185482f664b.svg",
+    "static/media/PaperClip.svg": "/static/media/PaperClip.44f22049de2d2ee0d5b7bfc45731dd19.svg",
+    "static/media/Linkedin.svg": "/static/media/Linkedin.f87ce10c7b1ea237becdfd1fd93f125c.svg",
     "index.html": "/index.html",
-    "main.493c2e33.css.map": "/static/css/main.493c2e33.css.map",
-    "main.3c344a73.js.map": "/static/js/main.3c344a73.js.map",
+    "static/media/Person.svg": "/static/media/Person.629095bd88a35be7c009c911d05e8d36.svg",
+    "static/media/Suitcase.svg": "/static/media/Suitcase.7252b909632ebc43ace19e969e87705d.svg",
+    "main.22a8c2a4.css.map": "/static/css/main.22a8c2a4.css.map",
+    "main.dc508d1a.js.map": "/static/js/main.dc508d1a.js.map",
     "453.ed3810f9.chunk.js.map": "/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.493c2e33.css",
-    "static/js/main.3c344a73.js"
+    "static/css/main.22a8c2a4.css",
+    "static/js/main.dc508d1a.js"
   ]
 }
