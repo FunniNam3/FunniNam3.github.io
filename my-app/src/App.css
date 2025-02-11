@@ -1,141 +1,60 @@
 .App {
-  text-align: center;
-  background-color: #282c34;
-  color: white;
-  padding: 5vmin;
-  display: flex;
-  gap: 1.75vmin;
-  flex-flow: row wrap;
+  align-items: center;
+  justify-content: center;
+}
+.Social-Wrapper
+{
+  margin-top: 3vmin;
+  width: 100%;
+  display: inline-flex;
+  justify-content: center;
   gap: 2vmin;
 }
 
-.App-header {
-  display: flex;
-  gap: 10vmin;
-  height: fit-content;
-  width: fit-content;
-  flex-direction: column;
-  gap: max(0.5vmin,15px);
-  min-width: 200px;
+img.Social{
+  width:2.1vmin;
+  height:2.1vmin;
 }
 
-div.Headshot {
-  width: fit-content;
-  height: 30vmin;
-  min-height: 145px;
+a.Social{
   display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+  padding: 1vmin 2vmin;
+  justify-content: center;
+  align-items: center;
+  gap: 1vmin;
+  border-radius: 100vmin;
+  border: 0.4vmin solid var(--blue, #23657D);
+  background: #FFF;
+  color: var(--blue, #23657D);
+  text-align: center;
+  font-family: Inter;
+  font-size: 1.8vmin;
+  font-weight: 600;
+  line-height: normal;
+  text-decoration: none;
+}
+
+h1.Name{
+  font-family: Inter;
+  font-size: 15vmin;
+  text-align: center;
+  font-weight: 700;
+  color: #23657D;
+}
+
+div.WallInline{
+  background-image: url("./images/WallInline.svg");
+  display: flex;
+  justify-self: center;
   position: relative;
+  top: -18vmin;
+  flex:auto;
+  background-size:cover;
 }
-
-img.Headshot {
-  height: 70%;
-  width: auto;
-  min-height: 105px;
-  border-radius: 50%;
-}
-h1.Headshot {
-  margin: 0px;
-  font-size: max(calc(30vmin * 0.2),30px);
-}
-
-div.Social {
-  width: fit-content;
-  height: fit-content;
-  font-size: max(2.5vmin, 15px);
-  padding: 2vmin;
-  padding-top: 1vmin;
-  padding-bottom: 1vmin;
-  border-radius: 5vmin;
-  border-color: white;
-  border-style: solid;
-  border-width: 0.25vmin;
-}
-
-div.Social:hover {
-  opacity: 70%;
-}
-
-div.Social-Wrapper {
-  width:fit-content;
-  height: fit-content;
-  display: flex;
-  flex-direction: row;
-  gap: 1vmin;
-}
-
-section.AboutMe {
-  flex-grow: 4;
-  flex-basis: 60%;
-  min-width: 20vmin;
-}
-
-h1.AboutMe {
-  font-size: 4vmin;
-}
-
-h2.AboutMe {
-  font-size: 3vmin;
-}
-
-p.ProfAbt {
-  text-align: center;
-  font-size: 3vmin;
-  flex-shrink: none;
-}
-
-p.PersonalAbt {
-  font-size: 4vmin;
-}
-
-section.Experience-Container {
-  text-align: left;
-  flex-basis: 100%;
-  flex-grow: 2;
-}
-
-h1.Experience-Container {
-  font-size: 4vmin;
-}
-
-ul.Experience-Container {
-  list-style: none;
-}
-
-div.Experience {
-  display: flex;
-  gap: 2vmin;
-  height: fit-content;
-}
-
-h2.Experience {
-  margin: 0;
-  font-size: 3vmin;
-}
-
-h2.ExLocat {
-  margin: 0;
-  flex-grow: 1;
-  font-size: 3vmin;
-  text-align: right;
-}
-
-h3.Experience {
-  margin: 0;
-  font-size: 2vmin;
-}
-
-h3.ExDate {
-  margin: 0;
-  font-size: 2.5vmin;
-  flex-grow: 1;
-  text-align: right;
-}
-
-li.Experience {
-  font-size: 2vmin;
-  display: flex;
-  flex-direction: column;
-  gap: 1vmin;
+div.WallOutline{
+  background-image: url("./images/WallOutline.svg");
+  background-size: 80vmin;
+  background-repeat: none;
+  width: 80vmin;
+  height: 162.5vmin;
 }
