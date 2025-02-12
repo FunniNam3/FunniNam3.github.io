@@ -1,6 +1,7 @@
 .App {
   align-items: center;
   justify-content: center;
+  font-family: Inter;
 }
 .Social-Wrapper
 {
@@ -27,7 +28,6 @@ a.Social{
   background: #FFF;
   color: var(--blue, #23657D);
   text-align: center;
-  font-family: Inter;
   font-size: 1.8vmin;
   font-weight: 600;
   line-height: normal;
@@ -35,7 +35,6 @@ a.Social{
 }
 
 h1.Name{
-  font-family: Inter;
   font-size: 15vmin;
   text-align: center;
   font-weight: 700;
@@ -47,9 +46,10 @@ div.WallInline{
   display: flex;
   justify-self: center;
   position: relative;
-  top: -18vmin;
+  top: -20vmin;
   flex:auto;
   background-size:cover;
+  z-index: 2;
 }
 div.WallOutline{
   background-image: url("./images/WallOutline.svg");
@@ -57,4 +57,43 @@ div.WallOutline{
   background-repeat: none;
   width: 80vmin;
   height: 162.5vmin;
+  z-index: 1;
+}
+section.FEET
+{
+  height: 0;
+}
+footer.FEET{
+  align-content: end;
+  justify-content: center;
+  flex: auto;
+  position: relative;
+  top: -70vmin;
+  height: 80vmin;
+  width: 100%;
+  background-color: #9C9080;
+  z-index: 0;
+}
+
+div.SocialFeet{
+  display: flex;
+  align-items: center;
+  gap: 1vmin;
+}
+
+div.Foot{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 4vmin;
+}
+
+h2.Name{
+  color: var(--white, #FFF);
+  text-align: center;
+  font-family: Inter;
+  font-size: 2.5vmin;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
 }
