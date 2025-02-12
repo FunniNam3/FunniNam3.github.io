@@ -41,24 +41,20 @@ h1.Name{
   color: #23657D;
 }
 
-div.WallInline{
-  background-image: url("./images/WallInline.svg");
+div.Wall{
   display: flex;
-  justify-self: center;
   position: relative;
-  top: -20vmin;
-  flex:auto;
-  background-size:cover;
-  z-index: 2;
-}
-div.WallOutline{
-  background-image: url("./images/WallOutline.svg");
-  background-size: 80vmin;
-  background-repeat: none;
-  width: 80vmin;
+  width: 100%;
   height: 162.5vmin;
   z-index: 1;
+  justify-content: center;
+  top: -20vmin;
 }
+
+img.Wall{
+  width: 80vmin;
+}
+
 section.FEET
 {
   height: 0;
@@ -72,7 +68,7 @@ footer.FEET{
   height: 80vmin;
   width: 100%;
   background-color: #9C9080;
-  z-index: 0;
+  z-index: -1;
 }
 
 div.SocialFeet{
@@ -86,6 +82,7 @@ div.Foot{
   justify-content: space-between;
   align-items: center;
   margin: 4vmin;
+  font-size: 2.5vmin;
 }
 
 h2.Name{
@@ -96,4 +93,19 @@ h2.Name{
   font-style: normal;
   font-weight: 600;
   line-height: normal;
+}
+
+div.Projects{
+  width: 0;
+  height: 0;
+}
+div.Project-Button{
+  border: solid;
+  border-radius: 100%;
+  border-color: #23657D;
+  border-width: 0.7vmin;
+  width: 10vmin;
+  height: 10vmin;
+  position: relative;
+  top: -10vmin;
 }

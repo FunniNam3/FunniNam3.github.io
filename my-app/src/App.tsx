@@ -4,6 +4,7 @@ import GitHub from "./images/GitHub.svg";
 import PaperClip from "./images/PaperClip.svg";
 import Suitcase from "./images/Suitcase.svg";
 import Person from "./images/Person.svg";
+import Wall from "./images/Wall.svg";
 import "./App.css";
 
 function App() {
@@ -41,9 +42,10 @@ function App() {
       <section>
         <h1 className="Name">ETHAN NGUYEN</h1>
         <div className="Wall">
-          <div className="WallInline">
-            <div className="WallOutline" />
-          </div>
+          <img className="Wall" src={Wall} />
+        </div>
+        <div className="Projects">
+          <div className="Project-Button"></div>
         </div>
       </section>
 
