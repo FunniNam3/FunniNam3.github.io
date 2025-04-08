@@ -1,0 +1,47 @@
+.Social-Wrapper
+{
+    margin-top: 3vmin;
+    width: 100%;
+    display: inline-flex;
+    justify-content: center;
+    gap: 2vmin;
+}
+
+img.Social{
+    width:2.2vmin;
+    height:2.2vmin;
+}
+
+a.Social{
+    display: flex;
+    padding: 1vmin 2vmin;
+    justify-content: center;
+    align-items: center;
+    gap: 1vmin;
+    border-radius: 100vmin;
+    border: 0.4vmin solid #23657D;
+    background: #FFF;
+    color: #23657D;
+    text-align: center;
+    font-size: 2.1vmin;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+}
+
+Link.Social{
+    display: flex;
+    padding: 1vmin 2vmin;
+    justify-content: center;
+    align-items: center;
+    gap: 1vmin;
+    border-radius: 100vmin;
+    border: 0.4vmin solid #23657D;
+    background: #FFF;
+    color: #23657D;
+    text-align: center;
+    font-size: 2.1vmin;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+}
