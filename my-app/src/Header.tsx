@@ -1,5 +1,5 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import { Link, Routes, Route } from "react-router-dom";
 import LinkedIn from "./images/Linkedin.svg";
 import GitHub from "./images/GitHub.svg";
 import PaperClip from "./images/PaperClip.svg";
@@ -29,10 +29,26 @@ function Header() {
         <img className="Social" src={Suitcase} alt="" />
         PROJECTS
       </a>
-      <Link className="Social" to="/AboutMe">
-        <img className="Social" src={Person} alt="" />
-        ABOUT ME
-      </Link>
+      <Routes>
+        <Route
+          path="/"
+          element={
+            <Link className="Social" to="/AboutMe">
+              <img className="Social" src={Person} alt="" />
+              ABOUT ME
+            </Link>
+          }
+        />
+        <Route
+          path="*"
+          element={
+            <Link className="Social" to="/">
+              <img className="Social" src={Person} alt="" />
+              HOME
+            </Link>
+          }
+        />
+      </Routes>
     </header>
   );
 }
