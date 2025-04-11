@@ -9,9 +9,10 @@ function App() {
   document.bgColor = "#FDF3E6";
   return (
     <div className="App">
-      <link rel="stylesheet"></link>
       <Header />
-      <Main />
+      <div className="Main">
+        <Main />
+      </div>
       <Footer />
     </div>
   );

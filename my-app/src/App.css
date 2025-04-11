@@ -2,4 +2,12 @@
   align-items: center;
   justify-content: center;
   font-family: Inter;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+div.Main
+{
+  flex: 1;
 }

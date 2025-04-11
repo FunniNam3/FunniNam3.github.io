@@ -1,0 +1,141 @@
+
+div.AboutMe
+{
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    padding: 4vmin;
+    background-color: white;
+    border:0.7vmin solid #23657D;
+    border-radius: 5vmin;
+    gap: 2vmin;
+    margin: 4vmin;
+}
+
+h1.Hello
+{
+    font-family: Inter;
+    font-size: 4vmin;
+    font-weight: 700;
+    color: #23657D;
+    width: fit-content;
+    margin-top: 0;
+}
+
+h2.Discribe
+{
+    width: 36vmin;
+    font-family: Inter;
+    font-size: 2vmin;
+    text-align: left;
+    font-weight: 700;
+    color: #666563;
+}
+
+p.Discribe
+{
+    width: 36vmin;
+    font-family: Inter;
+    font-size: 2vmin;
+    text-align: left;
+    font-weight: 700;
+    color: #666563;
+}
+
+div.Personal
+{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    gap: 4.5vmin;
+}
+
+img.Face
+{
+    align-self: center;
+    height: 40vmin;
+    width: 40vmin;
+}
+
+a.Social-Email
+{
+    display: flex;
+    padding: 1vmin 2vmin;
+    justify-content: center;
+    align-items: center;
+    gap: 1vmin;
+    border-radius: 100vmin;
+    border: 0.4vmin solid #23657D;
+    background: #FFF;
+    color: #23657D;
+    text-align: center;
+    font-size: 2.1vmin;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+    margin: 2vmin;
+}
+
+a.Social-LinkRes
+{
+    display: flex;
+    flex-grow: 1;
+    padding: 1vmin 2vmin;
+    justify-content: center;
+    align-items: center;
+    gap: 1vmin;
+    border-radius: 100vmin;
+    border: 0.4vmin solid #23657D;
+    background: #FFF;
+    color: #23657D;
+    text-align: center;
+    font-size: 2.1vmin;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+}
+
+img.Social-Discribe
+{
+    width:2.2vmin;
+    height:2.2vmin;
+}
+
+div.LinkRes
+{
+    display: flex;
+    flex-direction: row;
+    margin: 2vmin;
+    gap: 2vmin;
+}
+
+div.Text
+{
+    flex-grow: 1;
+}
+
+div.RandomPics
+{
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 4vmin;
+    background-color: white;
+    border:0.7vmin solid #23657D;
+    border-radius: 5vmin;
+    gap: 2vmin;
+    margin: 4vmin;
+}
+
+h1.Climbing
+{
+    font-family: Inter;
+    font-size: 4vmin;
+    font-weight: 700;
+    color: #23657D;
+    width: fit-content;
+}
