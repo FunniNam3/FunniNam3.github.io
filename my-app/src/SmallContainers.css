@@ -1,9 +1,6 @@
 
 div.Box
 {
-    position: relative;
-    top: -30vmin;
-    left: 50vmin;
     z-index: 10;
     display: flex;
     flex-direction: column;
@@ -15,14 +12,21 @@ div.Box
     background: #FFF;
     gap: 2vmin;
     color: #23657D;
-    width: 27vmin;
-    height: 20vmin;
+    width: fit-content;
+    height: fit-content;
+}
+
+div.Hi
+{
+    position: relative;
+    top: -20vmin;
+    left: 50vmin;
 }
 
 h1.Hi
 {
     text-align: left;
-    font-size: 4vmin;
+    font-size: 3vmin;
     margin: 0%;
 }
 
@@ -61,4 +65,21 @@ div.AbtMe
 
 img.LinkArrow{
     width: 2vmin;
+}
+
+div.Sushi
+{
+    position: relative;
+    height: 40vmin;
+}
+
+h2.Sushi
+{
+    color: #666563;
+    margin-top: 0;
+}
+
+img.Sushi
+{
+    width: 27vmin;
 }

@@ -3,9 +3,9 @@ import { Link } from "react-router-dom";
 import LinkArrow from "./images/LinkArrow.svg";
 import "./SmallContainers.css";
 
-function Hi() {
+function Hi(props) {
   return (
-    <div>
+    <div className="Hi" hidden={!props.clicked}>
       <div className="Box">
         <div>
           <h1 className="Hi"> Hi there</h1>
@@ -25,4 +25,24 @@ function Hi() {
   );
 }
 
-export default Hi;
+function Sushi(props) {
+  return (
+    <div className="Sushi" hidden={!props.clicked}>
+      <div className="Box">
+        <div>
+          <h1 className="Hi"> SUSHI BUSSIN'</h1>
+          <h2 className="Sushi">DESKTOP GAME</h2>
+          <img src="Sushi Bussin'.png" className="Sushi" />
+        </div>
+        <div className="AbtMe">
+          <a className="AbtMe" href="https://reneryt6.itch.io/sushi-bussin">
+            VIEW PROJECT
+            <img src={LinkArrow} className="LinkArrow" alt="" />
+          </a>
+        </div>
+      </div>
+    </div>
+  );
+}
+
+export { Hi, Sushi };
