@@ -5,6 +5,7 @@ import GitHub from "./images/GitHub.svg";
 import PaperClip from "./images/PaperClip.svg";
 import Suitcase from "./images/Suitcase.svg";
 import Person from "./images/Person.svg";
+import House from "./images/House.svg";
 import "./Header.css";
 
 function Header() {
@@ -25,10 +26,26 @@ function Header() {
         <img className="Social" src={PaperClip} alt="" />
         RESUME
       </a>
-      <a className="Social">
-        <img className="Social" src={Suitcase} alt="" />
-        PROJECTS
-      </a>
+      <Routes>
+        <Route
+          path="*"
+          element={
+            <Link className="Social" to="/Projects">
+              <img className="Social" src={Suitcase} alt="" />
+              PROJECTS
+            </Link>
+          }
+        />
+        <Route
+          path="/Projects"
+          element={
+            <Link className="Social" to="/AboutMe">
+              <img className="Social" src={Person} alt="" />
+              ABOUT ME
+            </Link>
+          }
+        />
+      </Routes>
       <Routes>
         <Route
           path="/"
@@ -43,7 +60,7 @@ function Header() {
           path="*"
           element={
             <Link className="Social" to="/">
-              <img className="Social" src={Person} alt="" />
+              <img className="Social" src={House} alt="" />
               HOME
             </Link>
           }
