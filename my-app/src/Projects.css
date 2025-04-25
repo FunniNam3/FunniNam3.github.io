@@ -1,0 +1,36 @@
+section.Projects
+{
+    width: 100vmin;
+}
+
+div.Container
+{
+    flex-grow: 1;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 4vmin;
+    background-color: white;
+    border:0.7vmin solid #23657D;
+    border-radius: 5vmin;
+    gap: 2vmin;
+    margin: 4vmin;
+}
+
+h1.Projects
+{
+    color: #23657D;
+    text-align: center;
+    font-size: 10vmin;
+    font-weight: 700;
+    line-height: normal;
+}
+
+h2.ProjectName
+{
+    color: #23657D;
+    text-align: left;
+    font-size: 5vmin;
+    font-weight: 600;
+    line-height: normal;
+}
