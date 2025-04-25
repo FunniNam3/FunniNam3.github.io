@@ -47,7 +47,11 @@ function AboutMe() {
       <div className="RandomPics">
         <h1 className="Climbing">SOME PICS OF ME CLIMBING</h1>
         <div>
-          <img src="Climbing 1.jpg" alt="Climbing pic 1" />
+          <img
+            className="Climbing1"
+            src="Climbing 1.jpg"
+            alt="Climbing pic 1"
+          />
         </div>
       </div>
     </div>
