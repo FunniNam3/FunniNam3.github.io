@@ -10,7 +10,7 @@ import "./Header.css";
 
 function Header() {
   return (
-    <header className="Social-Wrapper">
+    <header className="Social-Wrapper" id="Header">
       <a className="Social" href="https://www.linkedin.com/in/ethan-v-nguyen">
         <img className="Social" src={LinkedIn} alt="" />
         LINKEDIN

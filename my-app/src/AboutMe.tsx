@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import LinkedIn from "./images/Linkedin.svg";
 import Suitcase from "./images/Suitcase.svg";
 import PaperClip from "./images/PaperClip.svg";
 import "./AboutMe.css";
 
 function AboutMe() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   return (
     <div className="Container">
       <div className="AboutMe">
@@ -19,7 +23,7 @@ function AboutMe() {
             </p>
           </div>
           <div className="Socals">
-            <a className="Social-Email" href="https://github.com/FunniNam3">
+            <a className="Social-Email" href="mailto:nguyen.ev03@gmail.com">
               <img className="Social-Discribe" src={Suitcase} alt="" />
               nguyen.ev03@gmail.com
             </a>

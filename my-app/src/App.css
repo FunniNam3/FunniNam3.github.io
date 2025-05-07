@@ -11,3 +11,5 @@ div.Main
 {
   flex: 1;
 }
+
+html {scroll-behavior: smooth;}

@@ -1,10 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Projects.css";
 import Up from "./images/Cheveron-up.svg";
 import Down from "./images/Cheveron-down.svg";
 import { useState } from "react";
 
 function Projects() {
+  useEffect(() => {
+    window.scrollTo({ top: 0, behavior: "smooth" });
+  }, []);
+
   const [Engine12, setEngine12] = useState(false);
   const [Asset, setAsset] = useState(false);
   const [RayTrace, setRayTrace] = useState(false);
