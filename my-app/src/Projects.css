@@ -3,7 +3,7 @@ section.Projects
     width: 100vmin;
 }
 
-div.ProjectContainer
+button.ProjectContainer
 {
     flex-grow: 1;
     display: flex;
@@ -14,8 +14,8 @@ div.ProjectContainer
     background-color: white;
     border:0.7vmin solid #23657D;
     border-radius: 5vmin;
-    gap: 2vmin;
     margin: 4vmin;
+    width: 92vmin;
 }
 
 h1.Projects
@@ -45,3 +45,36 @@ div.ProjectDrop
     flex-direction: row;
 }
 
+.ProjectCheveron
+{
+    justify-self: flex-end;
+}
+.Cheveron
+{
+    margin-top: 1.3vmin;
+    width: 5vmin;
+}
+
+div.ProjectDescription
+{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 2vmin;
+}
+
+p.ProjectDescription{
+    margin-top: 2vmin;
+    font-family: Inter;
+    font-size: 2vmin;
+    text-align: left;
+    font-weight: 700;
+    color: #666563;
+}
+
+img.Engine12{
+    margin-top: 2vmin;
+    width: 50vmin;
+    border-radius: 2vmin;
+    justify-self:end
+}

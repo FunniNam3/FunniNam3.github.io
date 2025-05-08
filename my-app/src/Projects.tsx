@@ -10,6 +10,7 @@ function Projects() {
   }, []);
 
   const [Engine12, setEngine12] = useState(false);
+  const [Sushi, setSushi] = useState(false);
   const [Asset, setAsset] = useState(false);
   const [RayTrace, setRayTrace] = useState(false);
   const [Planet, setPlanet] = useState(false);
@@ -18,58 +19,68 @@ function Projects() {
     <section className="Projects">
       <h1 className="Projects">Projects</h1>
 
-      <div className="ProjectContainer">
+      <button
+        className="ProjectContainer"
+        onClick={() => setEngine12(!Engine12)}
+      >
         <div className="ProjectDrop">
           <h2 className="ProjectName">Engine 12</h2>
-          <button
-            className="ProjectCheveron"
-            onClick={() => setEngine12(!Engine12)}
-          >
-            <img hidden={Engine12} src={Down} alt="Toggle" />
-            <img hidden={!Engine12} src={Up} alt="Toggle" />
-          </button>
+          <div className="ProjectCheveron">
+            <img
+              className="Cheveron"
+              hidden={Engine12}
+              src={Down}
+              alt="Toggle"
+            />
+            <img
+              className="Cheveron"
+              hidden={!Engine12}
+              src={Up}
+              alt="Toggle"
+            />
+          </div>
         </div>
-        <p hidden={!Engine12}>peepee poopoo</p>
-      </div>
+        <div className="ProjectDescription" hidden={!Engine12}>
+          <p className="ProjectDescription" hidden={!Engine12}>
+            A 3D game engine that aims to be convenient and lightweight, using
+            OpenGL for rendering. We are also aiming for an OS-agnostic
+            development experience. Meaning, regardless if you are on Windows,
+            Linux, or even MacOS, you can contribute to the project.
+          </p>
+          <img
+            src="Engine 12.png"
+            alt=""
+            className="Engine12"
+            hidden={!Engine12}
+          />
+        </div>
+      </button>
 
-      <div className="ProjectContainer">
+      <button className="ProjectContainer" onClick={() => setSushi(!Sushi)}>
         <div className="ProjectDrop">
-          <h2 className="ProjectName">Asset Management System</h2>
-          <button className="ProjectCheveron" onClick={() => setAsset(!Asset)}>
-            <img hidden={Asset} src={Down} alt="Toggle" />
-            <img hidden={!Asset} src={Up} alt="Toggle" />
-          </button>
+          <h2 className="ProjectName">Sushi Bussin'</h2>
+          <div className="ProjectCheveron">
+            <img className="Cheveron" hidden={Sushi} src={Down} alt="Toggle" />
+            <img className="Cheveron" hidden={!Sushi} src={Up} alt="Toggle" />
+          </div>
         </div>
-        <p hidden={!Asset}>peepee poopoo</p>
-      </div>
-
-      <div className="ProjectContainer">
-        <div className="ProjectDrop">
-          <h2 className="ProjectName">Raytracing Engine</h2>
-          <button
-            className="ProjectCheveron"
-            onClick={() => setRayTrace(!RayTrace)}
-          >
-            <img hidden={RayTrace} src={Down} alt="Toggle" />
-            <img hidden={!RayTrace} src={Up} alt="Toggle" />
-          </button>
+        <div className="ProjectDescription" hidden={!Sushi}>
+          <p className="ProjectDescription" hidden={!Sushi}>
+            A cute 2D game set in a Japanese restaurant. The player takes the
+            role of a restaurant busboy who needs to clear and clean customer
+            tables quickly. Many customers leave behind items, and it is also
+            the busboy's job to keep these items safe in the restaurant
+            inventory so the item can be returned later. If time runs out before
+            the player is finished, they will get fired and lose the game!!
+          </p>
+          <img
+            src="Sushi Bussin'.png"
+            alt=""
+            className="Engine12"
+            hidden={!Sushi}
+          />
         </div>
-        <p hidden={!RayTrace}>peepee poopoo</p>
-      </div>
-
-      <div className="ProjectContainer">
-        <div className="ProjectDrop">
-          <h2 className="ProjectName">Procedural Planet Builder</h2>
-          <button
-            className="ProjectCheveron"
-            onClick={() => setPlanet(!Planet)}
-          >
-            <img hidden={Planet} src={Down} alt="Toggle" />
-            <img hidden={!Planet} src={Up} alt="Toggle" />
-          </button>
-        </div>
-        <p hidden={!Planet}>peepee poopoo</p>
-      </div>
+      </button>
     </section>
   );
 }
