@@ -11,7 +11,6 @@ function Projects() {
 
   const [Engine12, setEngine12] = useState(false);
   const [Sushi, setSushi] = useState(false);
-  const [Asset, setAsset] = useState(false);
   const [RayTrace, setRayTrace] = useState(false);
   const [Planet, setPlanet] = useState(false);
 
@@ -78,6 +77,44 @@ function Projects() {
             alt=""
             className="Engine12"
             hidden={!Sushi}
+          />
+        </div>
+      </button>
+
+      <button
+        className="ProjectContainer"
+        onClick={() => setRayTrace(!RayTrace)}
+      >
+        <div className="ProjectDrop">
+          <h2 className="ProjectName">Custom RayTracer</h2>
+          <div className="ProjectCheveron">
+            <img
+              className="Cheveron"
+              hidden={RayTrace}
+              src={Down}
+              alt="Toggle"
+            />
+            <img
+              className="Cheveron"
+              hidden={!RayTrace}
+              src={Up}
+              alt="Toggle"
+            />
+          </div>
+        </div>
+        <div className="ProjectDescription" hidden={!RayTrace}>
+          <p className="ProjectDescription" hidden={!RayTrace}>
+            Built a custom Raytracer in Unity to learn shader language and to
+            eventually implement it into Engine 12. Inspiration from: Ray
+            Tracing The Next Week by Peter Shirley, Trevor David Black, Steve
+            Hollasch, and most of the early code was incorporated from Sebastian
+            Lague's raytracing videos
+          </p>
+          <img
+            src="RayTracer.png"
+            alt=""
+            className="RayTracer"
+            hidden={!RayTrace}
           />
         </div>
       </button>

@@ -78,3 +78,10 @@ img.Engine12{
     border-radius: 2vmin;
     justify-self:end
 }
+
+img.RayTracer{
+    margin-top: 2vmin;
+    width: 30vmin;
+    border-radius: 2vmin;
+    justify-self:end
+}
