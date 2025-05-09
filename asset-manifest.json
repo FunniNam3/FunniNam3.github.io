@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.a24956e9.css",
-    "main.js": "/static/js/main.f54f1151.js",
+    "main.css": "/static/css/main.68b9ca61.css",
+    "main.js": "/static/js/main.7803ca44.js",
     "static/js/453.ed3810f9.chunk.js": "/static/js/453.ed3810f9.chunk.js",
     "static/media/Wall.svg": "/static/media/Wall.a5feb454b72fcfce73d0b9517f6498bb.svg",
     "static/media/Project 1.svg": "/static/media/Project 1.7cae12563a0bcbe18f6fe7cbe4a609b5.svg",
@@ -18,12 +18,12 @@
     "static/media/LinkArrow.svg": "/static/media/LinkArrow.8604f21a67198aac0281a14b0aaee961.svg",
     "static/media/Cheveron-down.svg": "/static/media/Cheveron-down.9fbd20bd8f1e15c9ed521499d9306489.svg",
     "static/media/Cheveron-up.svg": "/static/media/Cheveron-up.e2c58d871f009a9eb8c48b0279bc4491.svg",
-    "main.a24956e9.css.map": "/static/css/main.a24956e9.css.map",
-    "main.f54f1151.js.map": "/static/js/main.f54f1151.js.map",
+    "main.68b9ca61.css.map": "/static/css/main.68b9ca61.css.map",
+    "main.7803ca44.js.map": "/static/js/main.7803ca44.js.map",
     "453.ed3810f9.chunk.js.map": "/static/js/453.ed3810f9.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.a24956e9.css",
-    "static/js/main.f54f1151.js"
+    "static/css/main.68b9ca61.css",
+    "static/js/main.7803ca44.js"
   ]
 }
