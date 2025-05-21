@@ -118,3 +118,7 @@ div.ProjectText
     flex-grow: 1;
     gap: min(2vmin);
 }
+
+img.Modeling{
+    width: 20vmin;
+}

@@ -1,5 +1,6 @@
 import React, { useEffect } from "react";
 import "./Projects.css";
+import { Link } from "react-router-dom";
 import Up from "./images/Cheveron-up.svg";
 import Down from "./images/Cheveron-down.svg";
 import LinkArrow from "./images/LinkArrow.svg";
@@ -10,6 +11,7 @@ function Projects() {
     window.scrollTo({ top: 0, behavior: "smooth" });
   }, []);
 
+  const [Modeling, setModeling] = useState(false);
   const [Engine12, setEngine12] = useState(false);
   const [Sushi, setSushi] = useState(false);
   const [RayTrace, setRayTrace] = useState(false);
@@ -18,6 +20,48 @@ function Projects() {
   return (
     <section className="Projects">
       <h1 className="Projects">Projects</h1>
+
+      <button
+        className="ProjectContainer"
+        onClick={() => setModeling(!Modeling)}
+      >
+        <div className="ProjectDrop">
+          <h2 className="ProjectName">Modeling Renderings</h2>
+          <div className="ProjectCheveron">
+            <img
+              className="Cheveron"
+              hidden={Modeling}
+              src={Down}
+              alt="Toggle"
+            />
+            <img
+              className="Cheveron"
+              hidden={!Modeling}
+              src={Up}
+              alt="Toggle"
+            />
+          </div>
+        </div>
+        {!Modeling && (
+          <div className="ProjectDescription">
+            <div className="ProjectText">
+              <p className="ProjectDescription">
+                Just a page containing all of the 3D models that I have record
+                of. (and can show)
+                <br />
+                <br />
+                <br />
+                please look at them I promise they're cool
+              </p>
+              <Link className="ProjectLink" to="/Models">
+                VIEW Models
+                <img src={LinkArrow} className="LinkArrow" alt="" />
+              </Link>
+            </div>
+            <img className="Modeling" src="modeling/Yellow Egg.jpg" alt="" />
+          </div>
+        )}
+      </button>
 
       <button
         className="ProjectContainer"
