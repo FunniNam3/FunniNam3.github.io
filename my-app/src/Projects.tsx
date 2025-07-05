@@ -15,7 +15,7 @@ function Projects() {
   const [Engine12, setEngine12] = useState(false);
   const [Sushi, setSushi] = useState(false);
   const [RayTrace, setRayTrace] = useState(false);
-  // const [Planet, setPlanet] = useState(false);
+  const [Calorie, setCalorie] = useState(false);
 
   return (
     <section className="Projects">
@@ -59,6 +59,41 @@ function Projects() {
               </Link>
             </div>
             <img className="Modeling" src="modeling/Yellow Egg.jpg" alt="" />
+          </div>
+        )}
+      </button>
+
+      <button className="ProjectContainer" onClick={() => setCalorie(!Calorie)}>
+        <div className="ProjectDrop">
+          <h2 className="ProjectName">Calorie Tracker</h2>
+          <div className="ProjectCheveron">
+            <img
+              className="Cheveron"
+              hidden={Calorie}
+              src={Down}
+              alt="Toggle"
+            />
+            <img className="Cheveron" hidden={!Calorie} src={Up} alt="Toggle" />
+          </div>
+        </div>
+        {!Calorie && (
+          <div className="ProjectDescription">
+            <div className="ProjectText">
+              <p className="ProjectDescription">
+                A Caloire Tracker for I am coding and designing for my
+                girlfriend and I. Currently developing for android but will move
+                to ios afterwards. <br />
+                <br /> Using Sqlite, React-native, and a lot of suffering.
+              </p>
+              <a
+                className="ProjectLink"
+                href="https://github.com/aggie-coding-club/Engine-12"
+              >
+                VIEW PROJECT
+                <img src={LinkArrow} className="LinkArrow" alt="" />
+              </a>
+            </div>
+            <img className="Calorie" src="Calorie Tracker.png" alt="" />
           </div>
         )}
       </button>
