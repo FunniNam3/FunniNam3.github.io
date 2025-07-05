@@ -87,7 +87,7 @@ function Projects() {
               </p>
               <a
                 className="ProjectLink"
-                href="https://github.com/aggie-coding-club/Engine-12"
+                href="https://github.com/FunniNam3/Calorie_Tracker"
               >
                 VIEW PROJECT
                 <img src={LinkArrow} className="LinkArrow" alt="" />
