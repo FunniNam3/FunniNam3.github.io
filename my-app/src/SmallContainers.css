@@ -12,8 +12,8 @@ div.Box
     background: #FFF;
     gap: 2vmin;
     color: #23657D;
-    width: fit-content;
-    height: fit-content;
+    height: 100%;
+    width: 100%;
 }
 
 div.Hi
@@ -21,6 +21,7 @@ div.Hi
     position: relative;
     top: -20vmin;
     left: 50vmin;
+    width: fit-content;
 }
 
 h1.Hi
@@ -67,10 +68,11 @@ img.LinkArrow{
     width: 2vmin;
 }
 
-div.Sushi
+div.Calorie
 {
     position: relative;
-    height: 40vmin;
+    height: 50vmin;
+    width: 30vmin;
 }
 
 h2.Sushi
@@ -79,15 +81,16 @@ h2.Sushi
     margin-top: 0;
 }
 
-img.Sushi
+img.Calorie
 {
-    width: 27vmin;
+    width: 15vmin;
 }
 
 div.Engine12 {
     position: relative;
     top: 50vmin;
     left: 40vmin;
+    width: fit-content;
 }
 
 img.Engine {

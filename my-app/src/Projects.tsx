@@ -83,7 +83,7 @@ function Projects() {
                 A Caloire Tracker for I am coding and designing for my
                 girlfriend and I. Currently developing for android but will move
                 to ios afterwards. <br />
-                <br /> Using Sqlite, React-native, and a lot of suffering.
+                <br /> Using SQLite, React-native, and TypeScript.
               </p>
               <a
                 className="ProjectLink"

@@ -25,17 +25,25 @@ function Hi(props) {
   );
 }
 
-function Sushi(props) {
+function Calorie(props) {
   return (
-    <div className="Sushi" hidden={!props.clicked}>
+    <div className="Calorie" hidden={!props.clicked}>
       <div className="Box">
-        <div>
-          <h1 className="Hi"> SUSHI BUSSIN'</h1>
-          <h2 className="Sushi">DESKTOP GAME</h2>
-          <img src="Sushi Bussin'.png" className="Sushi" alt="" />
+        <div
+          style={{
+            justifyItems: "center",
+            display: "flex",
+            flexDirection: "column",
+          }}
+        >
+          <h1 className="Hi">Calorie Tracker</h1>
+          <img src="Calorie Tracker.png" className="Calorie" alt="" />
         </div>
         <div className="AbtMe">
-          <a className="AbtMe" href="https://reneryt6.itch.io/sushi-bussin">
+          <a
+            className="AbtMe"
+            href="https://github.com/FunniNam3/Calorie_Tracker"
+          >
             VIEW PROJECT
             <img src={LinkArrow} className="LinkArrow" alt="" />
           </a>
@@ -68,4 +76,4 @@ function Engine12(props) {
   );
 }
 
-export { Hi, Sushi, Engine12 };
+export { Hi, Calorie as Sushi, Engine12 };
