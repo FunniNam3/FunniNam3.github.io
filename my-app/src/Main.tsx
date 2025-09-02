@@ -5,6 +5,7 @@ import AboutMe from "./AboutMe.tsx";
 import Broken from "./Broken.tsx";
 import Projects from "./Projects.tsx";
 import Models from "./Models.tsx";
+import CalorieTracker from "./ProjectPages/CalorieTracker.tsx";
 
 function Main() {
   return (
@@ -13,6 +14,7 @@ function Main() {
       <Route path="/AboutMe" element={<AboutMe />} />
       <Route path="/Projects" element={<Projects />} />
       <Route path="/Models" element={<Models />} />
+      <Route path="/Calorie-Tracker" element={<CalorieTracker />} />
       <Route path="*" element={<Broken />} />
     </Routes>
   );

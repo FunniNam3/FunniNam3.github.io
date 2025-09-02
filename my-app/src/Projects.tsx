@@ -80,10 +80,10 @@ function Projects() {
           <div className="ProjectDescription">
             <div className="ProjectText">
               <p className="ProjectDescription">
-                A Caloire Tracker for I am coding and designing for my
-                girlfriend and I. Currently developing for android but will move
-                to ios afterwards. <br />
-                <br /> Using SQLite, React-native, and TypeScript.
+                An offline caloire tracker I am designing and developing. Most
+                of the development has been done for android however ios version
+                will be coming soon. <br />
+                <br /> Using SQLite, React-native, TypeScript, etc.
               </p>
               <a
                 className="ProjectLink"
@@ -93,7 +93,9 @@ function Projects() {
                 <img src={LinkArrow} className="LinkArrow" alt="" />
               </a>
             </div>
-            <img className="Calorie" src="Calorie Tracker.png" alt="" />
+            <Link to="/Calorie-Tracker">
+              <img className="Calorie" src="Calorie Tracker.png" alt="" />
+            </Link>
           </div>
         )}
       </button>
