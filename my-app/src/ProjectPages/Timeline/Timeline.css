@@ -1,0 +1,186 @@
+.Container {
+    padding: 1vw 2vw;
+    justify-content: center;
+    align-items: center;
+    border-radius: 2vw;
+    border: 0.4vw solid #23657D;
+    color: #23657D;
+}
+
+.Container h2 {
+    margin: 0;
+    font-size: 3vw;
+    font-weight: 800;
+    color: #23657D;
+}
+
+.Container h3 {
+    margin: 0;
+    font-size: 2vw;
+    font-weight: 700;
+    color: #666563;
+}
+
+.Container p {
+    margin: 0;
+    font-size: 1.75vw;
+    font-weight: 600;
+    color: #666563;
+}
+
+.Timeline {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap:5vw;
+    width: 90vw;
+    justify-content: center;
+    align-items: center;
+    padding: 5vw;
+    margin-bottom: 5vw;
+}
+
+.TimelineItemContainer {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap:5vw;
+    flex:1;
+}
+
+.TimelineItem {
+    max-width: 30vw;
+    width: 10vw;
+    height: fit-content;
+    position: relative;
+}
+
+.TimelineItemEmpty h2 {
+    margin: 0;
+    font-size: 3vw;
+    font-weight: 800;
+    color: #23657D;
+}
+
+.TimelineItemEmpty h3 {
+    margin: 0;
+    font-size: 2.5vw;
+    font-weight: 800;
+    color: #666563;
+}
+
+@keyframes fadeInRight {
+  from {
+    opacity: 0;
+    transform: translateX(50vw);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeInLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50vw);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+@keyframes fadeOutRight {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(50vw);
+  }
+}
+
+@keyframes fadeOutLeft {
+  from {
+    opacity: 1;
+    transform: translateX(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateX(-50vw);
+  }
+}
+
+.TimelineItem.FadeInRight{
+    animation: fadeInRight 0.5s ease-in-out;
+}
+
+.TimelineItem.FadeOutRight{
+    animation: fadeOutRight 0.5s ease-in-out;
+}
+
+.TimelineItem.FadeInLeft{
+    animation: fadeInLeft 0.5s ease-in-out;
+}
+
+.TimelineItem.FadeOutLeft{
+    animation: fadeOutLeft 0.5s ease-in-out;
+}
+
+.TimelineItem.FadeOutLeft,
+.TimelineItem.FadeOutRight {
+  animation-fill-mode: forwards;
+  pointer-events: none;
+}
+
+h2.TimelineTag{
+    font-size: 1.25vw;
+}
+
+a.TimelineLink{
+    pointer-events: auto;
+    position: relative;
+    font-size: 1.25vw;
+    text-decoration: none;
+    color: #23657D;
+    font-weight: 800;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    border-radius: 2vw;
+    border: 0.4vw solid #23657D;
+}
+
+a.TimelineLink:hover{
+    scale: 1.1;
+}
+
+.TimelineItemEmpty {
+    padding: 1vw 2vw;
+    border: 0.4vw solid transparent;
+    flex:1;
+}
+
+.TimeLineSelector {
+    display: flex;
+    background-color: #FFF;
+    padding: 1vw;
+    border-radius: 5vw;
+    border: 1vw solid #23657D;
+    aspect-ratio: 1;
+    justify-content: center;
+    align-items: center;
+}
+
+.TimelineLine {
+    position: absolute;
+    width: 2vw;
+    height:100%;
+    background-color: #23657D;
+    z-index: -1;
+    border-radius: 1vw;
+}

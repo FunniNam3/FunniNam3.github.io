@@ -6,15 +6,17 @@ import Broken from "./Broken.tsx";
 import Projects from "./Projects.tsx";
 import Models from "./Models.tsx";
 import CalorieTracker from "./ProjectPages/CalorieTracker.tsx";
+import ProjectTimeline from "./ProjectPages/ProjectTimeline.tsx";
 
 function Main() {
   return (
     <Routes>
       <Route path="/" element={<Home />} />
       <Route path="/AboutMe" element={<AboutMe />} />
-      <Route path="/Projects" element={<Projects />} />
+      <Route path="/Timeline" element={<ProjectTimeline />} />
       <Route path="/Models" element={<Models />} />
-      <Route path="/Calorie-Tracker" element={<CalorieTracker />} />
+      <Route path="/Projects/Calorie-Tracker" element={<CalorieTracker />} />
+      <Route path="/Projects" element={<Projects />} />
       <Route path="*" element={<Broken />} />
     </Routes>
   );

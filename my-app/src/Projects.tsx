@@ -93,7 +93,7 @@ function Projects() {
                 <img src={LinkArrow} className="LinkArrow" alt="" />
               </a>
             </div>
-            <Link to="/Calorie-Tracker">
+            <Link to="./Calorie-Tracker">
               <img className="Calorie" src="Calorie Tracker.png" alt="" />
             </Link>
           </div>
