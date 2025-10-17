@@ -1,8 +1,8 @@
 {
   "files": {
-    "main.css": "/static/css/main.07948922.css",
-    "main.js": "/static/js/main.f6e76234.js",
-    "static/js/453.96453769.chunk.js": "/static/js/453.96453769.chunk.js",
+    "main.css": "/static/css/main.ef58c02c.css",
+    "main.js": "/static/js/main.7a70c15e.js",
+    "static/js/453.117b0875.chunk.js": "/static/js/453.117b0875.chunk.js",
     "static/media/Wall.svg": "/static/media/Wall.a5feb454b72fcfce73d0b9517f6498bb.svg",
     "static/media/Project 1.svg": "/static/media/Project 1.7cae12563a0bcbe18f6fe7cbe4a609b5.svg",
     "static/media/Project 3.svg": "/static/media/Project 3.7cae12563a0bcbe18f6fe7cbe4a609b5.svg",
@@ -18,12 +18,12 @@
     "static/media/LinkArrow.svg": "/static/media/LinkArrow.8604f21a67198aac0281a14b0aaee961.svg",
     "static/media/Cheveron-down.svg": "/static/media/Cheveron-down.9fbd20bd8f1e15c9ed521499d9306489.svg",
     "static/media/Cheveron-up.svg": "/static/media/Cheveron-up.e2c58d871f009a9eb8c48b0279bc4491.svg",
-    "main.07948922.css.map": "/static/css/main.07948922.css.map",
-    "main.f6e76234.js.map": "/static/js/main.f6e76234.js.map",
-    "453.96453769.chunk.js.map": "/static/js/453.96453769.chunk.js.map"
+    "main.ef58c02c.css.map": "/static/css/main.ef58c02c.css.map",
+    "main.7a70c15e.js.map": "/static/js/main.7a70c15e.js.map",
+    "453.117b0875.chunk.js.map": "/static/js/453.117b0875.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.07948922.css",
-    "static/js/main.f6e76234.js"
+    "static/css/main.ef58c02c.css",
+    "static/js/main.7a70c15e.js"
   ]
 }

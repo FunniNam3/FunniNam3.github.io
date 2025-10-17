@@ -1,0 +1,66 @@
+[
+  {
+    "type": "Regular",
+    "date": "October 2025",
+    "tags": ["React", "TypeScript", "JSON"],
+    "selector":"faTimeline",
+    "links":[
+      {
+        "name":"Github","link":"https://github.com/FunniNam3/Timeline/tree/main"
+      }
+    ],
+    "title": "Project timeline",
+    "description": "Developed a dynamic, interactive project timeline using React, TypeScript, CSS animations, and FontAwesome, integrating JSON-driven data to display projects with dates, descriptions, tags, links, and icons. Enhanced usability with responsive design, hover effects, and smooth fade-in/out animations."
+  },
+  {
+    "type": "Opposite",
+    "date": "August 2025",
+    "tags": ["React Native", "SQLite"],
+    "selector":"faListCheck",
+    "title": "Calorie Tracker",
+    "imgPath":"Calorie Tracker.png",
+    "links":[
+      {
+        "name":"Github","link":"https://github.com/FunniNam3/Calorie_Tracker"
+      }
+    ],
+    "description": "An offline caloire tracker I am designing and developing. Most of the development has been done for android however ios version will be coming soon. Using SQLite, React-native, TypeScript, etc."
+  },
+  {
+    "type": "Regular",
+    "date": "May 2025",
+    "tags": ["C++", "GLSL"],
+    "selector":"faGamepad",
+    "title": "Engine 12",
+    "imgPath":"Engine 12.png",
+    "links":[{"name":"Github","link":"https://github.com/aggie-coding-club/Engine-12"}],
+    "description": "A 3D game engine that aims to be convenient and lightweight, using OpenGL for rendering. We are also aiming for an OS-agnostic development experience. Meaning, regardless if you are on Windows, Linux, or even MacOS, you can contribute to the project."
+  },
+  {
+    "type": "Opposite",
+    "date": "February 2025",
+    "tags": ["C#", "Unity"],
+    "title": "Sushi Bussin'",
+    "selector":"faFish",
+    "imgPath":"Engine 12.png",
+    "links":[{"name":"Github","link":"https://github.com/aggie-coding-club/Engine-12"}],
+    "description": "A cute 2D game set in a Japanese restaurant. The player takes the role of a restaurant busboy who needs to clear and clean customer tables quickly. Many customers leave behind items, and it is also the busboy's job to keep these items safe in the restaurant inventory so the item can be returned later. If time runs out before the player is finished, they will get fired and lose the game!!"
+  },
+  {
+    "type": "Regular",
+    "date": "August 2024",
+    "tags": ["C#", "HLSL", "Unity"],
+    "title": "Custom RayTracer",
+    "selector":"faVideo",
+    "imgPath":"RayTracer.png",
+    "links":[{"name":"Github","link":"https://github.com/FunniNam3/Ray-Tracer"}],
+    "description": "Built a custom Raytracer in Unity to learn shader language and to eventually implement it into Engine 12. Inspiration from: Ray Tracing The Next Week by Peter Shirley, Trevor David Black, Steve Hollasch, and most of the early code was incorporated from Sebastian Lague's raytracing videos"
+  },
+  {
+    "type": "Opposite",
+    "date": "August 2024",
+    "tags": ["Power Apps", "Power BI", "SharePoint"],
+    "title": "IT Asset Management App",
+    "description": "Collaborated with the IT department to identify requirements and design an intuitive user interface in Power Apps. Developed automated workflows using Power Automate for efficient asset management processes. Integrated Power BI for advanced reporting and analytics on asset utilization and lifecycle management. Ensured seamless data integration and collaboration through Microsoft SharePoint. Successfully demonstrated the app’s capabilities to the VP of the IT department and other important persons. Technologies Used: Power Apps, Power BI, Power Automate, Microsoft SharePoint, Dataverse"
+  }
+]
