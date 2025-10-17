@@ -10,7 +10,7 @@ function AboutMe() {
   }, []);
 
   return (
-    <div className="Container">
+    <section className="AboutMe">
       <div className="AboutMe">
         <div className="Personal">
           <div className="Text">
@@ -58,7 +58,7 @@ function AboutMe() {
           />
         </div>
       </div>
-    </div>
+    </section>
   );
 }
 
