@@ -187,6 +187,7 @@ export function TimelineItem({
       >
         {image && (
           <img
+            className={className}
             src={image}
             hidden={hidden}
             style={{ maxWidth: "50%", flex: 1, height: "auto" }}
@@ -234,15 +235,18 @@ export function TimelineItemContainer({
 }) {
   const [hidden, setHidden] = useState<boolean>(true);
   const [animClass, setAnimClass] = useState<string>("");
+  const [imageClass, setImgClass] = useState<string>("");
 
   const isOpposite = item.type === "Opposite";
 
   const handleToggle = () => {
     if (hidden) {
       setAnimClass(isOpposite ? "FadeInRight" : "FadeInLeft");
+      setImgClass(!isOpposite ? "FadeInRight" : "FadeInLeft");
       setHidden(false);
     } else {
       setAnimClass(isOpposite ? "FadeOutRight" : "FadeOutLeft");
+      setImgClass(!isOpposite ? "FadeOutRight" : "FadeOutLeft");
 
       setTimeout(() => {
         setHidden(true);
@@ -255,9 +259,11 @@ export function TimelineItemContainer({
       {isOpposite || typeof item.type == null ? (
         <>
           <TimelineItem
+            className={imageClass}
             date={item.date}
             title={item.title}
             image={item.imgPath}
+            hidden={hidden}
             alignRight
           />
           <TimelineSelector
@@ -276,9 +282,11 @@ export function TimelineItemContainer({
             setHide={handleToggle}
           />
           <TimelineItem
+            className={imageClass}
             date={item.date}
             title={item.title}
             image={item.imgPath}
+            hidden={hidden}
           />
         </>
       )}
