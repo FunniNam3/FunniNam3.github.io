@@ -72,6 +72,7 @@ export function TimelineTags({ tags }: { tags?: string[] }): JSX.Element {
         {tags.map((item, index) => {
           return (
             <Container
+              className="TimelineTag"
               key={`tag ${index}`}
               style={{
                 width: "fit-content",
@@ -137,6 +138,7 @@ export function TimelineItem({
   hidden,
   title,
   date,
+  image,
   alignRight,
 }: {
   id?: string | number;
@@ -146,6 +148,7 @@ export function TimelineItem({
   hidden?: boolean;
   title?: string;
   date?: string;
+  image?: string;
   alignRight?: boolean;
 }): JSX.Element {
   if (data) {
@@ -175,9 +178,24 @@ export function TimelineItem({
     );
   } else {
     return (
-      <div className="TimelineItemEmpty">
-        <h2 style={{ textAlign: alignRight ? "right" : "left" }}>{title}</h2>
-        <h3 style={{ textAlign: alignRight ? "right" : "left" }}>{date}</h3>
+      <div
+        className="TimelineItemTitle"
+        style={{
+          flexDirection: alignRight ? "row" : "row-reverse",
+          gap: "2vmin",
+        }}
+      >
+        {image && (
+          <img
+            src={image}
+            hidden={hidden}
+            style={{ maxWidth: "50%", flex: 1, height: "auto" }}
+          />
+        )}
+        <div style={{ flex: 1 }}>
+          <h2 style={{ textAlign: alignRight ? "right" : "left" }}>{title}</h2>
+          <h3 style={{ textAlign: alignRight ? "right" : "left" }}>{date}</h3>
+        </div>
       </div>
     );
   }
@@ -236,7 +254,12 @@ export function TimelineItemContainer({
     <div key={index} className="TimelineItemContainer">
       {isOpposite || typeof item.type == null ? (
         <>
-          <TimelineItem date={item.date} title={item.title} alignRight />
+          <TimelineItem
+            date={item.date}
+            title={item.title}
+            image={item.imgPath}
+            alignRight
+          />
           <TimelineSelector
             icon={item.selector}
             hide={hidden}
@@ -252,7 +275,11 @@ export function TimelineItemContainer({
             hide={hidden}
             setHide={handleToggle}
           />
-          <TimelineItem date={item.date} title={item.title} />
+          <TimelineItem
+            date={item.date}
+            title={item.title}
+            image={item.imgPath}
+          />
         </>
       )}
     </div>
