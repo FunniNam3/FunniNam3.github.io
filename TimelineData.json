@@ -9,6 +9,7 @@
         "name":"Github","link":"https://github.com/FunniNam3/Timeline/tree/main"
       }
     ],
+    "imgPath":"Projects Timeline.png",
     "title": "Project timeline",
     "description": "Developed a dynamic, interactive project timeline using React, TypeScript, CSS animations, and FontAwesome, integrating JSON-driven data to display projects with dates, descriptions, tags, links, and icons. Enhanced usability with responsive design, hover effects, and smooth fade-in/out animations."
   },
@@ -42,7 +43,7 @@
     "tags": ["C#", "Unity"],
     "title": "Sushi Bussin'",
     "selector":"faFish",
-    "imgPath":"Engine 12.png",
+    "imgPath":"Sushi Bussin'.png",
     "links":[{"name":"Github","link":"https://github.com/aggie-coding-club/Engine-12"}],
     "description": "A cute 2D game set in a Japanese restaurant. The player takes the role of a restaurant busboy who needs to clear and clean customer tables quickly. Many customers leave behind items, and it is also the busboy's job to keep these items safe in the restaurant inventory so the item can be returned later. If time runs out before the player is finished, they will get fired and lose the game!!"
   },
