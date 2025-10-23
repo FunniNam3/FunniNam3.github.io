@@ -1,0 +1,99 @@
+
+div.Box
+{
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    padding: 4vmin 3vmin;
+    justify-content: center;
+    align-items: left;
+    border-radius: 5vmin;
+    border: 0.4vmin solid #23657D;
+    background: #FFF;
+    gap: 2vmin;
+    color: #23657D;
+    height: 100%;
+    width: 100%;
+}
+
+div.Hi
+{
+    position: relative;
+    top: -20vmin;
+    left: 50vmin;
+    width: fit-content;
+}
+
+h1.Hi
+{
+    text-align: left;
+    font-size: 3vmin;
+    margin: 0%;
+}
+
+p.Hi
+{
+    margin: 0%;
+    width: 25vmin;
+    font-size: 2vmin;
+    font-weight: 600;
+    color: #666563;
+}
+
+a.AbtMe
+{
+    display: flex;
+    padding: 1vmin 2vmin;
+    justify-content: center;
+    align-items: center;
+    gap: 1vmin;
+    border-radius: 100vmin;
+    border: 0.4vmin solid #23657D;
+    background: #FFF;
+    color: #23657D;
+    text-align: center;
+    font-size: 2.1vmin;
+    font-weight: 600;
+    line-height: normal;
+    text-decoration: none;
+}
+
+div.AbtMe
+{
+    display: flex;
+    justify-content: end;
+}
+
+img.LinkArrow{
+    width: 2vmin;
+}
+
+div.Calorie
+{
+    position: relative;
+    height: 50vmin;
+    width: 30vmin;
+}
+
+h2.Sushi
+{
+    color: #666563;
+    margin-top: 0;
+}
+
+img.Calorie
+{
+    width: 15vmin;
+}
+
+div.Engine12 {
+    position: relative;
+    top: 50vmin;
+    left: 40vmin;
+    width: fit-content;
+}
+
+img.Engine {
+    height: 20vmin;
+    border-radius: 2vmin;
+}
