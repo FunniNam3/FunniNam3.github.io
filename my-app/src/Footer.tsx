@@ -1,4 +1,3 @@
-import React from "react";
 import LinkedIn from "./images/Linkedin.svg";
 import GitHub from "./images/GitHub.svg";
 import PaperClip from "./images/PaperClip.svg";

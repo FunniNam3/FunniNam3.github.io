@@ -1,4 +1,3 @@
-import React from "react";
 import { Link, Routes, Route } from "react-router-dom";
 import LinkedIn from "./images/Linkedin.svg";
 import GitHub from "./images/GitHub.svg";

@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import { useState } from "react";
 import Wall from "./images/Wall.svg";
 import Project1 from "./images/Project 1.svg";

@@ -1,0 +1,73 @@
+section.ProjectTimeline {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+h2 {
+    font-size: 5vw;
+    font-weight: 800;
+    color: #23657D;
+}
+
+h3 {
+    font-size: 2vw;
+    font-weight: 700;
+    color: #666563;
+}
+
+div.PageDivider {
+    width: 100vw;
+    height: 1vw;
+    background-color: #23657D;
+}
+
+div.InProgressProjects {
+    padding:5vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    flex:1;
+}
+
+.InProgress {
+    display: flex;
+    flex-direction: row;
+    gap: 10vmin;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+    border: #23657D solid 1vw;
+    border-radius: 2vw;
+    padding: 2vw;
+    text-decoration: none;
+}
+
+.InProgress {
+    display: flex;
+    flex-direction: row;
+    gap: 10vmin;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+    border: #23657D solid 1vw;
+    border-radius: 2vw;
+    padding: 2vw;
+    text-decoration: none;
+}
+
+.InProgress h3 {
+    margin: 0;
+    font-size: 3vw;
+    font-weight: 800;
+    color: #23657D;
+}
+
+.InProgress h4 {
+    margin: 0;
+    font-size: 3vw;
+    font-weight: 800;
+    color: #666563;
+}

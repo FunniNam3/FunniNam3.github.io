@@ -9,6 +9,8 @@ import {
   faFish,
   faVideo,
   faTimeline,
+  faPlug,
+  faHexagonNodes,
 } from "@fortawesome/free-solid-svg-icons";
 
 export interface TimelineLink {
@@ -17,12 +19,12 @@ export interface TimelineLink {
 }
 
 export interface TimelineItemData {
+  title: string;
+  date: string;
+  description: string;
   type?: string;
   selector?: string;
-  date: string;
   tags?: string[];
-  title: string;
-  description: string;
   imgPath?: string;
   links?: TimelineLink[];
 }
@@ -35,18 +37,20 @@ const iconMap: Record<string, any> = {
   faFish: faFish,
   faVideo: faVideo,
   faTimeline: faTimeline,
+  faPlug: faPlug,
+  faHexagonNodes: faHexagonNodes,
 };
 
 export function Container({
   id,
-  key,
+  itemKey,
   children,
   style,
   className,
   hidden,
 }: {
   id?: string | number;
-  key?: string;
+  itemKey: string;
   className?: string;
   children?: React.ReactNode;
   style?: React.CSSProperties;
@@ -55,7 +59,7 @@ export function Container({
   return (
     <div
       id={String(id)}
-      key={key}
+      key={itemKey ? itemKey : id}
       className={`Container ${className}`}
       style={style}
       hidden={hidden}
@@ -74,6 +78,7 @@ export function TimelineTags({ tags }: { tags?: string[] }): JSX.Element {
             <Container
               className="TimelineTag"
               key={`tag ${index}`}
+              itemKey={`tag ${index}`}
               style={{
                 width: "fit-content",
                 borderRadius: "10vmin",
@@ -132,7 +137,7 @@ export function TimelineLinks({
 
 export function TimelineItem({
   id,
-  key,
+  itemKey,
   className,
   data,
   hidden,
@@ -142,7 +147,7 @@ export function TimelineItem({
   alignRight,
 }: {
   id?: string | number;
-  key?: string;
+  itemKey: string;
   className?: string;
   data?: TimelineItemData;
   hidden?: boolean;
@@ -157,7 +162,7 @@ export function TimelineItem({
     }
     return (
       <Container
-        key={key}
+        itemKey={itemKey}
         id={id}
         className={`TimelineItem ${className}`}
         style={{
@@ -259,6 +264,7 @@ export function TimelineItemContainer({
       {isOpposite || typeof item.type == null ? (
         <>
           <TimelineItem
+            itemKey={`TimelineEmptyItem${String(index)}`}
             className={imageClass}
             date={item.date}
             title={item.title}
@@ -271,17 +277,28 @@ export function TimelineItemContainer({
             hide={hidden}
             setHide={handleToggle}
           />
-          <TimelineItem hidden={hidden} className={animClass} data={item} />
+          <TimelineItem
+            itemKey={`TimelineItem${String(index)}`}
+            hidden={hidden}
+            className={animClass}
+            data={item}
+          />
         </>
       ) : (
         <>
-          <TimelineItem data={item} className={animClass} hidden={hidden} />
+          <TimelineItem
+            itemKey={`TimelineItem${String(index)}`}
+            data={item}
+            className={animClass}
+            hidden={hidden}
+          />
           <TimelineSelector
             icon={item.selector}
             hide={hidden}
             setHide={handleToggle}
           />
           <TimelineItem
+            itemKey={`TimelineEmptyItem${String(index)}`}
             className={imageClass}
             date={item.date}
             title={item.title}

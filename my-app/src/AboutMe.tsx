@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import { useEffect } from "react";
 import LinkedIn from "./images/Linkedin.svg";
 import Suitcase from "./images/Suitcase.svg";
 import PaperClip from "./images/PaperClip.svg";
@@ -53,7 +53,7 @@ function AboutMe() {
         <div>
           <img
             className="Climbing1"
-            src="Climbing 1.jpg"
+            src="/climbing/Climbing 1.jpg"
             alt="Climbing pic 1"
           />
         </div>

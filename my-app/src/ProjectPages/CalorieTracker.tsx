@@ -19,6 +19,7 @@ function CalorieTracker() {
         </div>
         <div>
           <h1>UNFINISED</h1>
+          <h2>I know I formatted it badly too</h2>
           <Link
             style={{
               display: "flex",
