@@ -11,6 +11,7 @@ import {
   faTimeline,
   faPlug,
   faHexagonNodes,
+  faWifi,
 } from "@fortawesome/free-solid-svg-icons";
 
 export interface TimelineLink {
@@ -39,6 +40,7 @@ const iconMap: Record<string, any> = {
   faTimeline: faTimeline,
   faPlug: faPlug,
   faHexagonNodes: faHexagonNodes,
+  faWifi: faWifi,
 };
 
 export function Container({

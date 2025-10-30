@@ -14,6 +14,13 @@ import "./RobotArm.css";
 
 const data: TimelineItemData[] = [
   {
+    title: "Remote",
+    date: "October 30th 2025",
+    description: "Getting IR sensor/remote to work with 2 motors",
+    imgPath: "/Robot Arm/IRSensor.jpg",
+    selector: "faWifi",
+  },
+  {
     title: "Joints",
     date: "October 23rd 2025",
     description:
@@ -25,10 +32,10 @@ const data: TimelineItemData[] = [
   {
     title: "Initial Steps",
     date: "October 20th 2025",
-    selector: "faPlug",
     description:
       "Learned how to use a stepper motor from Elegoo Starter Kit. First time using Arduino so I bought a kit from Elegoo inorder to learn how to use an Arduino and connect it to a stepper motor.",
     imgPath: "/Robot Arm/Stepper.png",
+    selector: "faPlug",
   },
 ];
 
