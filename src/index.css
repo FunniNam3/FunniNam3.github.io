@@ -2,5 +2,8 @@
 
 #root {
     --primary: #0F172A;
+    --header: #38BDF8;
+    --second-header: #3B82F6;
     --link-hover: #38BDF8;
+    --p-color: #ffffff80;
 }
