@@ -3,7 +3,7 @@ import Navbar from "./Components/nav";
 
 export default function Layout() {
   return (
-    <div className="flex flex-col min-h-screen p-6 gap-20 bg-(--primary) text-white">
+    <div className="flex flex-col min-h-screen gap-20 bg-(--primary) text-white">
       <Navbar />
 
       <main className="flex-1">

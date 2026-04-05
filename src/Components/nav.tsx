@@ -5,7 +5,7 @@ export default function Navbar() {
   const hover =
     " hover:text-(--link-hover) hover:scale-105 active:scale-95 transition-all duration-300";
   return (
-    <nav className="flex justify-between items-center">
+    <nav className="flex p-6 justify-between items-center">
       <Link to="/" className={"text-2xl font-bold" + hover}>
         Ethan
       </Link>
