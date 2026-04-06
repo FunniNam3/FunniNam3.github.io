@@ -2,6 +2,7 @@ import hero from "./assets/hero.png";
 
 function App() {
   const courseStyle = "bg-white/10 p-2 rounded-lg text-white/60";
+  const techStyle = "p-3 bg-(--primary) rounded";
   return (
     <div className="py-20 flex flex-col gap-10">
       <section id="hero" className="w-full flex p-6">
@@ -81,6 +82,34 @@ function App() {
             </div>
           </div>
         </div>
+      </section>
+      <section className="pt-6 px-6 flex flex-col gap-10 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-size-[24px_24px]">
+        <div className="flex flex-col gap-3">
+          <h1 className="text-3xl font-bold text-center">Technical Arsenal</h1>
+          <p className="text-(--p-color) text-center px-6">
+            A comprehensive toolkit spanning embedded systems, full-stack
+            development, and game engines
+          </p>
+        </div>
+
+        <div className="flex flex-wrap gap-10">
+          <div className={techStyle}>
+            <h2>Hardware & Embedded</h2>
+          </div>
+          <div className={techStyle}>
+            <h2>Programming</h2>
+          </div>
+          <div className={techStyle}>
+            <h2>Frameworks</h2>
+          </div>
+          <div className={techStyle}>
+            <h2>Cloud & DB</h2>
+          </div>
+          <div className={techStyle}>
+            <h2>Design & Tools</h2>
+          </div>
+        </div>
+        <div className="bg-linear-0 from-(--primary) from-0% to-transparent to-100% h-10 w-full" />
       </section>
     </div>
   );

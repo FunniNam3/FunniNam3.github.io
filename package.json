@@ -3,7 +3,7 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://FunniNam3.github.io",
+  "homepage": "https://funniNam3.github.io",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
