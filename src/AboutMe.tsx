@@ -53,7 +53,7 @@ function AboutMe() {
         <div>
           <img
             className="Climbing1"
-            src="/climbing/Climbing 1.jpg"
+            src="climbing/Climbing 1.jpg"
             alt="Climbing pic 1"
           />
         </div>

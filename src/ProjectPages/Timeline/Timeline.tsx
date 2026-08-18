@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, type JSX } from "react";
 import "./Timeline.css";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {

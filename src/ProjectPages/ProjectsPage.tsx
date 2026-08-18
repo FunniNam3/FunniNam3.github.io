@@ -1,25 +1,13 @@
-import { useState, useEffect } from "react";
-import { Timeline, TimelineItemData } from "./Timeline/Timeline.tsx";
+import { useState } from "react";
+import { Timeline, type TimelineItemData } from "./Timeline/Timeline.tsx";
 import { Link } from "react-router-dom";
+import timelineData from "./TimelineData.json";
 import "./ProjectsPage.css";
 
 export default function ProjectsPage() {
-  const [data, setData] = useState<TimelineItemData[]>([]);
-
-  useEffect(() => {
-    async function loadData() {
-      try {
-        const response = await fetch("/TimelineData.json");
-        if (!response.ok) throw new Error(`Failed to load TimelineData.json`);
-        const json = await response.json();
-        setData(json);
-      } catch (err) {
-        console.error("Error loading timeline data:", err);
-      }
-    }
-
-    loadData();
-  }, []);
+  const [data] = useState<TimelineItemData[]>(
+    timelineData as TimelineItemData[],
+  );
 
   return (
     <section className="ProjectTimeline">
